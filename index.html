@@ -1,1 +1,62 @@
-Test index file..
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple One Pager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-500">MyWebsite</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#hero" class="text-gray-600 hover:text-blue-500">Home</a></li>
+          <li><a href="#features" class="text-gray-600 hover:text-blue-500">Features</a></li>
+          <li><a href="#footer" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to MyWebsite</h2>
+      <p class="text-lg mb-6">Simplifying your experience with clean design and efficiency.</p>
+      <a href="#features" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Our Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6 text-center">
+          <h4 class="text-xl font-bold mb-4">Feature 1</h4>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 text-center">
+          <h4 class="text-xl font-bold mb-4">Feature 2</h4>
+          <p class="text-gray-600">Suspendisse eget libero in urna consectetur tempus.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 text-center">
+          <h4 class="text-xl font-bold mb-4">Feature 3</h4>
+          <p class="text-gray-600">Praesent id ligula at arcu vestibulum aliquet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+      <p>Made with ❤️ using TailwindCSS.</p>
+    </div>
+  </footer>
+</body>
+</html>
