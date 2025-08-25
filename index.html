@@ -7,19 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 <script defer type="text/javascript" src="//stacetest3.pr876.preview.tirondigital.com.au/smartembed-VGWPfYDSEC.js"></script>
 
-  <script>
-function waitForForm() {
-  if (window.smartembeds && window.smartembeds['VGWPfYDSEC']) {
-    window.smartembeds['VGWPfYDSEC'].onLoad(function() {
-      console.log('Form has loaded successfully!');
-    });
-  } else {
-    setTimeout(waitForForm, 200); // try again after 200ms
-  }
-}
 
-waitForForm();
-  </script>  
   
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -34,7 +22,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-  
+  <script>
+function waitForForm() {
+  if (window.smartembeds && window.smartembeds['VGWPfYDSEC']) {
+    window.smartembeds['VGWPfYDSEC'].onLoad(function() {
+      console.log('Form has loaded successfully!');
+    });
+  } else {
+    setTimeout(waitForForm, 200); // try again after 200ms
+  }
+}
+
+waitForForm();
+  </script>    
   
 </head>
 <body class="bg-gray-100 text-gray-800">
