@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple One Pager</title>
   <script src="https://cdn.tailwindcss.com"></script>
-<script defer type="text/javascript" src="//stacetest3.pr876.preview.tirondigital.com.au/smartembed-VGWPfYDSEC.js"></script>
+<script defer type="text/javascript" src="//stacetest3.pr876.preview.tirondigital.com.au/smartembed-VGWPfYDSEC.js">
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.smartembeds['VGWPfYDSEC'].onLoad(function() {
+    this.fillFields({
+      'First Name': 'John',
+      'Last Name': 'Doe',
+      'Email Address': 'john@example.com',
+      'Phone Number': '+1234567890'
+    });
+  });
+});
+
+
+  
+</script>
 
 
   
@@ -25,16 +40,6 @@
     </div>
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  window.smartembeds['VGWPfYDSEC'].onLoad(function() {
-    this.fillFields({
-      'First Name': 'John',
-      'Last Name': 'Doe',
-      'Email Address': 'john@example.com',
-      'Phone Number': '+1234567890'
-    });
-  });
-});
 
  
   </header>
